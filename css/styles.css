@@ -792,8 +792,6 @@ h1, h2, h3, ul, p {
     padding: 96px 0;
     background-color: var(--navy-blue);
 }
-.footer-container {
-}
 
 @media screen and (max-width: 767px) {
     .footer-item + .footer-item {
@@ -864,10 +862,9 @@ h1, h2, h3, ul, p {
     background-color: var(--green);
 }
 
-.footer-input-box {
-}
 .footer-input {
     width: 100%;
+    min-width: 264px;
     height: 40px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -888,14 +885,17 @@ h1, h2, h3, ul, p {
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.6);
 }
+
 .subscribe-button {
     display: flex;
     margin: 0 auto;
     min-width: 165px;
+    height: 40px;
     text-align: center;
     justify-content: center;
     align-items: center;
     padding: 8px 24px;
+    
     border: none;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -918,7 +918,24 @@ h1, h2, h3, ul, p {
     fill: var(--background);
 }
 
-.subscribe-icon {
+@media screen and (min-width: 768px) {
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+    .footer-input-box {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .footer-input {
+
+    }
+    .subscribe-button {
+        margin-left: 24px;
+    }
 }
 
 /* 
