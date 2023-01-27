@@ -26,6 +26,12 @@ h1, h2, h3, ul, p {
     list-style: none;
 }
 
+img {
+    display: block;
+    max-width: auto;
+    height: 100%;
+}
+
 .container {
     padding: 0 15px;
 }
@@ -135,6 +141,7 @@ h1, h2, h3, ul, p {
     .mobile-menu-container {
         position: relative;
         padding: 40px;
+        display: flex;
     }
     
     .mobile-menu-close {
@@ -170,8 +177,7 @@ h1, h2, h3, ul, p {
         margin-top: 40px;
     }
     
-    .mobile-nav-item:last-child {
-        margin-bottom: 284px;
+    .mobile-nav-list {
     }
     
     .mobile-nav-anchor {
@@ -740,8 +746,9 @@ h1, h2, h3, ul, p {
     justify-content: center;
 }
 .customers-item {
-    flex-basis: calc((100% - 16px) / 2);
+    width: calc((100% - 16px) / 2);
     height: 88px;
+    max-width: 190px;
 }
 
 .customers-link {
@@ -773,7 +780,7 @@ h1, h2, h3, ul, p {
         gap: 72px 24px;
     }
     .customers-item {
-        flex-basis: 168px;
+        width: 168px;
     }
 }
 
