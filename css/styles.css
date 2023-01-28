@@ -38,20 +38,20 @@ img {
 
 @media screen and (min-width: 480px) {
     .container {
-        width: 426px;
+        max-width: 428px;
         margin: 0 auto;
     }
 }
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 766px;
+        max-width: 768px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .container {
-        width: 1158px;
+        max-width: 1158px;
     }
 }
 
