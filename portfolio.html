@@ -14,6 +14,11 @@
     <header class="header">
         <div class="container header-container">
             <a class="logo" href="./index.html">web<span class="header-logo">studio</span></a>
+            <button class="mobile-menu-open js-open-menu">
+                <svg class="menu-open-icon" width="32" height="22">
+                    <use href="./images/icons.svg#burger-icon"></use>
+                </svg>
+            </button>
             <nav class="navigation">
                 <ul class="navigation-list">
                     <li class="navigation-list-item">
@@ -37,6 +42,67 @@
                     </li>
                 </ul>
             </address>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu js-menu-container is-open">
+            <div class="mobile-menu-container">
+                <button class="mobile-menu-close js-close-menu">
+                    <svg class="menu-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-anchor" href="./index.html">studio</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-anchor" href="./portfolio.html">portfolio</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-anchor active" href="">contacts</a>
+                    </li>
+                </ul>
+                <ul class="mobile-address-list">
+                    <li class="mobile-address-item">
+                        <a class="mobile-address-anchor" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="mobile-address-item">
+                        <a class="mobile-address-anchor" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <ul class="mobile-soc-list">
+                            <li class="mobile-soc-item">
+                                <a href="" class="mobile-soc-link">
+                                    <svg class="mobile-soc-icon" width="16" height="16">
+                                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobile-soc-item">
+                                <a href="" class="mobile-soc-link">
+                                    <svg class="mobile-soc-icon" width="16" height="16">
+                                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobile-soc-item">
+                                <a href="" class="mobile-soc-link">
+                                    <svg class="mobile-soc-icon" width="16" height="16">
+                                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mobile-soc-item">
+                                <a href="" class="mobile-soc-link">
+                                    <svg class="mobile-soc-icon" width="16" height="16">
+                                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <!-- Main content -->
@@ -68,22 +134,24 @@
                         <a href="" class="cards-anchor">
                             <div class="box-overlay">
                                 <picture>
-                                    <source srcset="images/desktop/banking-app-interface-concept-desktop.webp 1x, images/desktop/banking-app-interface-concept-desktop@2x.webp 2x"
+                                    <source srcset="./images/desktop/banking-app-interface-concept-desktop.webp 1x, ./images/desktop/banking-app-interface-concept-desktop@2x.webp 2x"
                                     media="(min-width: 1200px)"
                                     type="image/webp">
-                                    <source srcset="images/desktop/banking-app-interface-concept-desktop.jpg 1x, images/desktop/banking-app-interface-concept-desktop@2x.jpg 2x"
+                                    <source srcset="./images/desktop/banking-app-interface-concept-desktop.jpg 1x, ./images/desktop/banking-app-interface-concept-desktop@2x.jpg 2x"
                                     media="(min-width: 1200px)">
-                                    <source srcset="images/tablet/banking-app-interface-concept-tablet.webp 1x, images/tablet/banking-app-interface-concept-tablet@2x.webp 2x"
+                                    <source srcset="./images/tablet/banking-app-interface-concept-tablet.webp 1x, ./images/tablet/banking-app-interface-concept-tablet@2x.webp 2x"
                                     media="(min-width: 768px)"
                                     type="image/webp">
-                                    <source srcset="images/tablet/banking-app-interface-concept-tablet.jpg 1x, images/tablet/banking-app-interface-concept-tablet@2x.jpg 2x"
+                                    <source srcset="./images/tablet/banking-app-interface-concept-tablet.jpg 1x, ./images/tablet/banking-app-interface-concept-tablet@2x.jpg 2x"
                                     media="(min-width: 768px)">
-                                    <source srcset="images/mobile/banking-app-interface-concept-mobile.webp 1x, images/mobile/banking-app-interface-concept-mobile@2x.webp 2x"
+                                    <source srcset="./images/mobile/banking-app-interface-concept-mobile.webp 1x, ./images/mobile/banking-app-interface-concept-mobile@2x.webp 2x"
                                     media="(max-width: 767px)"
-                                    type="image/webp">
-                                    <source srcset="images/mobile/banking-app-interface-concept-mobile.jpg 1x, images/mobile/banking-app-interface-concept-mobile@2x.jpg 2x"
-                                    media="(max-width: 767px)">
-                                    <img class="block" src="images/mobile/banking-app-interface-concept-mobile.jpg" alt="banking" width="360">
+                                    type="image/webp"
+                                    width="396">
+                                    <source srcset="./images/mobile/banking-app-interface-concept-mobile.jpg 1x, ./images/mobile/banking-app-interface-concept-mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)"
+                                    width="396">
+                                    <img class="block" src="./images/mobile/banking-app-interface-concept-mobile.jpg" alt="banking" width="360">
                                 </picture>
                                 <div class="overlay">
                                     <p class="text-overlay">
@@ -100,7 +168,26 @@
                     <li class="cards-list-item">
                         <a href="" class="cards-anchor">
                             <div class="box-overlay">
-                                <img class="block" src="images/cashless-payment.jpg" alt="cashlest" width="360">
+                                <picture>
+                                    <source srcset="./images/desktop/cashless-payment-desktop.webp 1x, ./images/desktop/cashless-payment-desktop@2x.webp 2x"
+                                    media="(min-width: 1200px)"
+                                    type="image/webp">
+                                    <source srcset="./images/desktop/cashless-payment-desktop.jpg 1x, ./images/desktop/cashless-payment-desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                    <source srcset="./images/tablet/cashless-payment-tablet.webp 1x, ./images/tablet/cashless-payment-tablet@2x.webp 2x"
+                                    media="(min-width: 768px)"
+                                    type="image/webp">
+                                    <source srcset="./images/tablet/cashless-payment-tablet.jpg 1x, ./images/tablet/cashless-payment-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                    <source srcset="./images/mobile/cashless-payment-mobile.webp 1x, ./images/mobile/cashless-payment-mobile@2x.webp 2x"
+                                    media="(max-width: 767px)"
+                                    type="image/webp"
+                                    width="396">
+                                    <source srcset="./images/mobile/cashless-payment-mobile.jpg 1x, ./images/mobile/cashless-payment-mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)"
+                                    width="396">
+                                    <img class="block" src="./images/mobile/cashless-payment-mobile.jpg" alt="banking" width="360">
+                                </picture>
                                 <div class="overlay">
                                     <p class="text-overlay">
                                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -116,7 +203,26 @@
                     <li class="cards-list-item">
                         <a href="" class="cards-anchor">
                             <div class="box-overlay">
-                                <img class="block" src="images/meditaion-app.jpg" alt="Meditaion" width="360">
+                                <picture>
+                                    <source srcset="./images/desktop/cashless-payment-mobile.webp 1x, ./images/desktop/cashless-payment-mobile@2x.webp 2x"
+                                    media="(min-width: 1200px)"
+                                    type="image/webp">
+                                    <source srcset="./images/desktop/cashless-payment-mobile.jpg 1x, ./images/desktop/cashless-payment-mobile@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                    <source srcset="./images/tablet/cashless-payment-mobile.webp 1x, ./images/tablet/cashless-payment-mobile@2x.webp 2x"
+                                    media="(min-width: 768px)"
+                                    type="image/webp">
+                                    <source srcset="./images/tablet/cashless-payment-mobile.jpg 1x, ./images/tablet/cashless-payment-mobile@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                    <source srcset="./images/mobile/cashless-payment-mobile.webp 1x, ./images/mobile/cashless-payment-mobile@2x.webp 2x"
+                                    media="(max-width: 767px)"
+                                    type="image/webp"
+                                    width="396">
+                                    <source srcset="./images/mobile/cashless-payment-mobile.jpg 1x, ./images/mobile/cashless-payment-mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)"
+                                    width="396">
+                                    <img class="block" src="./images/mobile/meditaion-app-mobile.jpg" alt="banking" width="360">
+                                </picture>
                                 <div class="overlay">
                                     <p class="text-overlay">
                                         14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -273,7 +379,7 @@
                 <label for="email-subscribe"><p class="footer-media">Subscribe</p></label>
                 <div class="footer-input-box">
                 <input class="footer-input" type="email" name="email-subscribe" id="email-subscribe" placeholder="E-mail">
-                <button type="submit" class="subscribe-button">Subscribe 
+                <button type="submit" class="subscribe-button"><p>Subscribe</p>
                     <svg class="subscribe-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-frame"></use>
                     </svg>
