@@ -342,7 +342,7 @@ img {
     }
 
     .navigation-anchor::after {
-        bottom: 0;
+        bottom: -1px;
     }
 
     .address {
