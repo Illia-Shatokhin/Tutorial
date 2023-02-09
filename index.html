@@ -10,11 +10,19 @@
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/modal.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <div class="modal-windows">
-        <h2>Модальные окна</h2>
+        <h2>Модальні вікна - <a
+            class="header-anchor"
+            href="https://medium.com/@dan.postnov/%D0%BC%D0%BE%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%BE%D0%BA%D0%BD%D0%B0-%D0%BD%D0%B0-javascript-30-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%BA%D0%BE%D0%B4%D0%B0-dbbb599649f3"
+            target="_blank"
+            rel="noopener noreferrer nofollow">medium.com/</a></h2>
         <!-- Элементы для вызова модальных окон, могут быть любые -->
     
         <a href="#" class="js-open-modal" data-modal="1">Открыть окно 1</a>
@@ -40,7 +48,7 @@
     </div>
 
     <div class="slider">
-        <h2>Cлайдеры</h2>
+        <h2>Cлайдери - <a class="header-anchor" href="https://swiperjs.com/" target="_blank" rel="noopener noreferrer nofollow">swiperjs.com</a></h2>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">Slide 1</div>
@@ -57,9 +65,34 @@
             <div class="swiper-button-prev"></div>
           </div>
     </div>
+
+    <div class="animation-background">
+        <h2>Бібліотека з анімованим фоном - <a class="header-anchor" href="https://vincentgarreau.com/particles.js/" target="_blank" rel="noopener noreferrer nofollow">vincentgarreau.com</a></h2>
+        <!-- particles.js container --> 
+        <div id="particles-js"></div> 
+        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    </div>
+
+    <div class="wow-animations">
+        <h2>WOW Анімації - <a class="header-anchor" href="https://wowjs.uk/" target="_blank" rel="noopener noreferrer nofollow">wowjs.uk</a></h2>
+        <ul class="wow-list">
+            <li class="wow-item wow animate__animated animate__lightSpeedInLeft">Hello</li>
+            <li class="wow-item wow animate__animated animate__lightSpeedInLeft">Hello</li>
+            <li class="wow-item wow animate__animated animate__lightSpeedInLeft">Hello</li>
+            <li class="wow-item wow animate__animated animate__lightSpeedInRight">Hello</li>
+            <li class="wow-item wow animate__animated animate__lightSpeedInRight">Hello</li>
+            <li class="wow-item wow animate__animated animate__lightSpeedInRight">Hello</li>
+        </ul>
+    </div>
     
     <script src="./js/modal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/particles.js"></script>
+    <script src="./js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

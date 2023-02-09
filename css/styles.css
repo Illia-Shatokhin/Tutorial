@@ -1,8 +1,18 @@
 body {
-    background-color: gainsboro;
+    background-color: rgb(242, 238, 238);
 }
 
-/* --------------- Модальные окна --------------- */
+
+
+.header-anchor {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    text-decoration: none;
+}
+
+/* --------------- Модальні вікна --------------- */
 
 .modal-windows {
     width: 100%;
@@ -11,7 +21,7 @@ body {
     text-align: center;
 }
 
-/* --------------- Слайдеры --------------- */
+/* --------------- Слайдери --------------- */
 
 .slider {
     width: 100%;
@@ -28,7 +38,7 @@ body {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: plum;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,4 +49,51 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* --------------- Бібліотека з анімованим фоном --------------- */
+
+.animation-background {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    outline: 1px solid red;
+    text-align: center;
+}
+
+.animation-background .header-anchor {
+    position: relative;
+    z-index: 1;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------- WOW Animations --------------- */
+
+.wow-animations {
+    width: 100%;
+    height: 200px;
+    outline: 1px solid red;
+    text-align: center;
+}
+
+.wow-list {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wow-item {
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    list-style: none;
+    text-align: center;
 }

@@ -71,7 +71,7 @@
  
  /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
  
- a {
+ .js-open-modal {
     padding: 20px;
     display: inline-block;
     text-decoration: none;
