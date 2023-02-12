@@ -99,6 +99,21 @@ body {
 }
 
 .general {
-    width: 100%;
+    width: 1200px;
     padding: 20px 40px;
+    outline: 1px solid red;
+    margin-bottom: 25px;
+}
+
+.table {
+    text-align: center;
+}
+
+.table-example {
+    outline: 1px solid black;
+}
+
+.table-example td, .table-example th {
+    padding: 5px;
+    border: 1px solid black;
 }

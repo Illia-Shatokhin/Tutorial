@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial</title>
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/modal.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <nav>
+        <a href="#html">&#167;1 - HTML</a>
+        <a href="#selectors">Селектори та колір</a>
+        <a href="#modal-windows">Модальні вікна</a>
+        <a href="#slider">Cлайдери</a>
+        <a href="#animation-background">Анімоваий фон</a>
+        <a href="#wow">WOW - Анімації</a>
+    </nav>
     <div class="general">
+        <h2 class="table" id="html">&#167;1 - HTML</h2>
         <ul>
             <li>
                 <b>HTML</b> - відповідає за наповнення веб-сторінки контентом, структуру і зміст.
@@ -32,19 +35,142 @@
         <p>
             Специфікація<a href="https://html.spec.whatwg.org/multipage/" target="_blank"> HTML Living Standard</a> - головний документ, який описує стандарти, можливості і майбутній розвиток мови HTML.
         </p>
-        <p>Довідники
-            <ul>
-                <li>
-                    <p><a href="https://htmlreference.io/" target="_blank">Довідник HTML-тегів</a> Для того щоб дізнатися доступні атрибути тегу та їх призначення</p>
-                </li>
-                <li>
-                    <a href="https://cssreference.io/" target="_blank">Довідник CSS-властивостей</a>
-                </li>
-            </ul>
-        </p>
+        <p>Довідники:</p>
+        <ul>
+            <li>
+                <p><a href="https://htmlreference.io/" target="_blank">Довідник HTML-тегів</a> Для того щоб дізнатися доступні атрибути тегу та їх призначення</p>
+            </li>
+            <li>
+                <a href="https://cssreference.io/" target="_blank">Довідник CSS-властивостей</a>
+            </li>
+            <li>
+                <a href="https://codeguide.co/" target="_blank">Керівництво для написання коду в процесі вивчення технологій.</a>
+            </li>
+            <li>
+                <a href="https://css.in.ua/"></a>
+            </li>
+        </ul>
+        <ol>
+            <li>&#60;p&#62; - універсальний контейнер для групування дрібних фразових елементів, відокремлення їх один від одного, і подальшої стилізації.</li>
+            <li>&#60;h1&#62; - &#60;h6&#62; - визначає текстові заголовки смислових розділів різного рівня, які вказують на важливість секції контенту, розташованого після них.</li>
+            <li>&#60;li&#62; - елементи списку, діти списку</li>
+            <li>&#60;ol&#62; - створює нумерований (упорядкований) список, тобто кожен елемент списку пронумерований.</li>
+            <li>&#60;ul&#62; - створює маркований (невпорядкований) список, кожен елемент якого починається з невеликого символу (маркера).</li>
+            <li>&#60;a&#62; - призначений для створення посилань, тексту, клікаючи на який, переходимо на іншу сторінку, завантажуємо файл тощо.
+                <ul>
+                    <li>href="адреса" - aдреса посилання задається в обов'язковому атрибуті</li>
+                    <li>target="_blank" - визначає те, в який вкладці повинен відкриватися документ, на який веде посилання.</li>
+                    <li>rel="noreferrer nofollow noopener" - відношення між поточним і пов'язаним документом</li>
+                    <li>download="ім'я файлу" - повідомляє браузеру, що зазначений ресурс не повинен відкриватися, а завантажуватися в момент, коли користувач клікне на посилання.</li>
+                    <li>href="tel:+14251234563" - здійснювати дзвінки на телефони</li>
+                    <li>href="mailto:example@mail.ua - відправляти повідомлення</li>
+                </ul>
+            </li>
+            <li>&#60;button&#62; - Інтерактивний елемент, який оживляється за допомогою JavaScript.
+                <ul>
+                    <li>type="button"</li>
+                    <li>type="submit" - за замовчуванням</li>
+                </ul>
+            </li>
+            <li>&#60;img&#62; - призначений для розмітки зображень у різних графічних форматах.
+                <ul>
+                    <li>src="шлях" - обов'язковий атрибут, вказує адресу зображення. Шлях до зображення може бути абсолютним, або відносним.</li>
+                    <li>alt="опис" - обов'язковий атрибут, альтернативний опис.</li>
+                    <li>width="значення" і height="значення" - задають розміри зображення в пікселях.</li>
+                </ul>
+            </li>
+            <li>&#60;header&#62; - Шапка (хедер) виділяє вступну частину всієї сторінки, складної секції або статті.</li>
+            <li>&#60;footer&#62; - Підвал (футер) - це фінальна частина всієї сторінки, її розділу або статті.</li>
+            <li>&#60;main&#62; - Основний (унікальний) вміст, що не повторюється на інших сторінках сайту.</li>
+            <li>&#60;nav&#62; - Визначає розділ основної навігації з посиланнями на секції поточної або інших сторінок.</li>
+            <li>&#60;article&#62; - Незалежна, відокремлювана, і така, що має самостійне значення, частина документа.</li>
+            <li>&#60;section&#62; - Великий розділ, що об'єднує вміст за смисловим значенням.</li>
+            <li>&#60;div&#62; - Універсальний контейнер без семантичного значення.</li>
+            <li>&#60;table&#62; - визначає всю таблицю, контейнер для контенту.</li>
+            <li>&#60;tr&#62; - рядок таблиці (table row). Не може бути порожнім, повинен містити хоча б одну клітинку.</li>
+            <li>&#60;td&#62; - клітинка таблиці (table data). Можна використовувати тільки всередині рядка.</li>
+            <li>&#60;th&#62; - (table header) - семантичний тег клітинки-заголовка.</li>
+            <li>&#60;thead&#62; - шапка, обгортає групу рядків таблиці в області заголовка.</li>
+            <li>&#60;tbody&#62; - тіло, обгортає основну групу рядків таблиці.</li>
+            <li>&#60;tfoot&#62; - підвал, означає групу рядків таблиці в області нижнього колонтитула.</li>
+            <li>&#60;caption&#62; - заголовок таблиці
+                <table class="table-example">
+                    <caption>Example</caption>
+                    <thead>
+                    <tr>
+                        <th rowspan="2">Cloud service</th>
+                        <th colspan="3">Statistics</th>
+                    </tr>
+                    <tr>
+                        <th>Users</th>
+                        <th>Visits</th>
+                        <th>Volume</th>
+                    </tr>
+                    </thead>
+                
+                    <tbody>
+                    <tr>
+                        <td>Google</td>
+                        <td>12000</td>
+                        <td>307000</td>
+                        <td>1000 Tb</td>
+                    </tr>
+                    <tr>
+                        <td>Amazon</td>
+                        <td>9000</td>
+                        <td>200500</td>
+                        <td>800 Tb</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>&#60;dl&#62; - це контейнер для списку пар термінів та їх описів, тобто словник.</li>
+            <li>&#60;dt&#62; - для розмітки термінів</li>
+            <li>&#60;dd&#62; - для описів</li>
+            <li>&#60;span&#62; - Універсальний контейнер для дрібного текстового контенту</li>
+            <li>
+                <pre>&#60;pre&#62; - дозволяє 
+                додати переформатований текст 
+                з примусовими перенесеннями рядків.</pre>
+            </li>
+            <li>&#60;sup&#62; і &#60;sub&#62;- для відображення символів у <sup>верхньому</sup> (sup, скорочено від superscript) і <sub>нижньому</sub> (sub, скорочено від subscript) індексі.</li>
+            <li>&#60;time&#62; - для часу datetime="pppp-мм-дд" - атрибут - <time datetime="2019-12-14">14 грудня 2019 року. </time></li>
+            <li>&#60;address&#62; - для зберігання контактної інформації про автора</li>
+            <li>&#60;strong&#62; і &#60;b&#62; - <b>роблять текст жирним </b> &#60;strong&#62; - семантичний</li>
+            <li>&#60;em&#62; і &#60;i&#62; - <i>роблять текст курсивним </i> &#60;em&#62; - семантичний</li>
+            <li>&#60;video&#62; - Для розмітки відеоконтенту
+                <ul>
+                    <li>src - вказує адресу відеофайлу</li>
+                    <li>poster - адреса зображення, яке використовується як постер, якщо відео завантажене або ще не відтворюється</li>
+                    <li>width і height - задають висоту і ширину як у зображення</li>
+                    <li>controls - атрибут-прапорець, якщо присутній, додаються елементи управління відео</li>
+                    <li>autoplay - атрибут-прапорець, якщо присутній, відтворення відео починається як тільки воно доступне</li>
+                    <li>loop - атрибут-прапорець, якщо присутній, відео буде повторюватися в циклі</li>
+                    <li>preload - вказує режим попереднього завантаження відео</li>
+                    <li>none - не завантажувати відео заздалегідь</li>
+                    <li>metadata - завантажити службову інформацію (тривалість тощо)</li>
+                    <li>auto - заздалегідь завантажувати всі відео</li>
+                </ul>
+            </li>
+            <li>&#60;audio&#62; - Для розмітки аудіоконтенту
+                <ul>
+                    <li>src - вказує адресу відеофайлу</li>
+                    <li>controls - атрибут-прапорець, якщо присутній, додаються елементи управління аудіо</li>
+                    <li>autoplay - атрибут-прапорець, якщо присутній, відтворення аудіо починається як тільки воно доступне</li>
+                    <li>loop - атрибут-прапорець, якщо присутній, аудіо буде повторюватися в циклі</li>
+                    <li>preload вказує режим попереднього завантаження аудіофайлу</li>
+                    <li>none - не завантажувати аудіо заздалегідь</li>
+                    <li>metadata - завантажити службову інформацію (тривалість тощо)</li>
+                    <li>auto - заздалегідь завантажувати увесь аудіофайл</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <div class="general">
+        <h2 class="table" id="selectors">Селектори та колір</h2>
     </div>
     <div class="modal-windows">
-        <h2>Модальні вікна - <a
+        <h2 id="modal-windows">Модальні вікна - <a
             class="header-anchor"
             href="https://medium.com/@dan.postnov/%D0%BC%D0%BE%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%BE%D0%BA%D0%BD%D0%B0-%D0%BD%D0%B0-javascript-30-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%BA%D0%BE%D0%B4%D0%B0-dbbb599649f3"
             target="_blank"
@@ -74,7 +200,7 @@
     </div>
 
     <div class="slider">
-        <h2>Cлайдери - <a class="header-anchor" href="https://swiperjs.com/" target="_blank" rel="noopener noreferrer nofollow">swiperjs.com</a></h2>
+        <h2 id="slider">Cлайдери - <a class="header-anchor" href="https://swiperjs.com/" target="_blank" rel="noopener noreferrer nofollow">swiperjs.com</a></h2>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">Slide 1</div>
@@ -93,7 +219,7 @@
     </div>
 
     <div class="animation-background">
-        <h2>Бібліотека з анімованим фоном - <a class="header-anchor" href="https://vincentgarreau.com/particles.js/" target="_blank" rel="noopener noreferrer nofollow">vincentgarreau.com</a></h2>
+        <h2 id="animation-background">Бібліотека з анімованим фоном - <a class="header-anchor" href="https://vincentgarreau.com/particles.js/" target="_blank" rel="noopener noreferrer nofollow">vincentgarreau.com</a></h2>
         <!-- particles.js container --> 
         <div id="particles-js"></div> 
         <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
@@ -101,7 +227,7 @@
     </div>
 
     <div class="wow-animations">
-        <h2>WOW Анімації - <a class="header-anchor" href="https://wowjs.uk/" target="_blank" rel="noopener noreferrer nofollow">wowjs.uk</a></h2>
+        <h2 id="wow">WOW Анімації - <a class="header-anchor" href="https://wowjs.uk/" target="_blank" rel="noopener noreferrer nofollow">wowjs.uk</a></h2>
         <ul class="wow-list">
             <li class="wow-item wow animate__animated animate__lightSpeedInLeft">Hello</li>
             <li class="wow-item wow animate__animated animate__lightSpeedInLeft">Hello</li>
