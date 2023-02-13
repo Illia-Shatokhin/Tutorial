@@ -117,3 +117,51 @@ body {
     padding: 5px;
     border: 1px solid black;
 }
+
+.texts-decor {
+    text-decoration: underline;
+}
+
+.texts-transform {
+    text-transform: capitalize;
+}
+
+.texts-spacing {
+    letter-spacing: 10px;
+}
+
+.texts-word-spacing {
+    word-spacing: 10px;
+}
+
+.texts-shadow {
+    text-shadow: 2px 2px 2px red, 4px 4px 2px blue;
+}
+
+.texts-white-space {
+    white-space: pre-wrap;
+}
+
+.texts-font-size {
+    font-size: 20px;
+}
+
+.texts-font-weight {
+    font-weight: 800;
+}
+
+.texts-font-style {
+    font-style: italic;
+}
+
+.texts-font-family {
+    font-family: Helvetica, sans-serif;
+}
+
+.texts-first-letter::first-letter {
+    color: red;
+}
+.texts-selection::selection {
+    background-color: black;
+    color: white;
+}
