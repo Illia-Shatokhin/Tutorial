@@ -2,7 +2,9 @@ body {
     background-color: rgb(242, 238, 238);
 }
 
-
+nav a {
+    display: block;
+}
 
 .header-anchor {
     font-size: 20px;
@@ -10,6 +12,94 @@ body {
     letter-spacing: 0.02em;
     color: #2E2F42;
     text-decoration: none;
+}
+
+/* --------------- Блокова модель, Flexbox --------------- */
+
+.box-width-height {
+    box-sizing: content-box;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #f44336;
+    padding: 5px;
+    margin: 10px;
+    background-color: #ffeb3b;
+}
+
+.box-box-sizing {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #f44336;
+    padding: 5px;
+    margin: 10px;
+    background-color: #ffeb3b;
+}
+
+.flexbox-padding {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.flexbox-margin {
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.flexbox-border {
+    border: 3px solid red;
+}
+
+.flexbox-border-radius {
+    border: 3px solid red;
+    border-radius: 10px;
+}
+
+.flexbox-menu {
+    display: flex;
+    list-style: none;
+}
+
+.flexbox-item {
+    background-color: black;
+    color: red;
+    padding: 5px;
+}
+
+.flexbox-item:not(:first-child) {
+    margin-left: 25px;
+}
+
+.direction {
+    flex-direction: row-reverse;
+}
+
+.justify {
+    justify-content: space-around;
+}
+
+.align {
+    height: 100px;
+    align-items: stretch;
+}
+
+.wrap {
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.wrap > .flexbox-item {
+    flex-basis: calc((100% - 90px) / 10);
+    margin: 0;
+}
+
+.align-content {
+    height: 150px;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.align-content > .flexbox-item {
+    margin-left: 10px;
 }
 
 /* --------------- Модальні вікна --------------- */

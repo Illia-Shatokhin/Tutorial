@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -12,12 +13,29 @@
 </head>
 <body>
     <nav>
-        <a href="#html">&#167;1 - HTML</a>
-        <a href="#selectors">Селектори та колір</a>
-        <a href="#modal-windows">Модальні вікна</a>
-        <a href="#slider">Cлайдери</a>
-        <a href="#animation-background">Анімоваий фон</a>
-        <a href="#wow">WOW - Анімації</a>
+        <ol>
+            <li>
+                <a href="#html">&#167;1 - HTML</a>
+            </li>
+            <li>
+                <a href="#selectors">&#167;2 Селектори та колір</a>
+            </li>
+            <li>
+                <a href="#flexbox">&#167;3 Блокова модель, Flexbox</a>
+            </li>
+            <li>
+                <a href="#modal-windows">Модальні вікна</a>
+            </li>
+            <li>
+                <a href="#slider">Cлайдери</a>
+            </li>
+            <li>
+                <a href="#animation-background">Анімоваий фон</a>
+            </li>
+            <li>
+                <a href="#wow">WOW - Анімації</a>
+            </li>
+        </ol>
     </nav>
     <div class="general">
         <h2 class="table" id="html">&#167;1 - HTML</h2>
@@ -167,7 +185,7 @@
         </ol>
     </div>
     <div class="general">
-        <h2 class="table" id="selectors">Селектори та колір, Текст та шрифт</h2>
+        <h2 class="table" id="selectors">&#167;2 Селектори та колір, Текст та шрифт</h2>
         <h3>Оформлення тексту</h3>
         <p>Властивість text-decoration -  <span class="texts-decor"> Задає різні декоративні підкреслення та інші ефекти тексту.</span></p>
         <p>Властивість text-transform -  <span class="texts-transform"> Управляє регістром символів у тексті</span></p>
@@ -188,7 +206,160 @@
         <p>Псевдоелемент ::selection - <span class="texts-selection">Управляє стилем виділення тексту елемента, перевизначаючи стандартні значення з таблиці стилів браузера.</span></p>
     </div>
     <div class="general">
-        <h2 class="table" id="">Блокова модель, Flexbox</h2>
+        <h2 class="table" id="flexbox">&#167;3 Блокова модель, Flexbox</h2>
+        <ul>
+            <li>Властивості width і height -  <span> Ці властивості дозволяють явно вказати загальну ширину і висоту елемента</span>
+                <div class="box-width-height"></div>
+            </li>
+            <li>Властивість box-sizing -  <span> Встановлює тип блокової моделі елемента - формулу розрахунку його розмірів.</span>
+                <div class="box-box-sizing"></div>
+            </li>
+            <li>
+                <p class="flexbox-padding">Властивість padding -  <span> внутрішні поля між контентом і рамкою для усіх сторін елемента.</span></p>
+            </li>
+            <li>
+                <p class="flexbox-margin">Властивість margin -  <span> зовнішні відступи від рамки для всіх сторін елемента.</span></p></li>
+            <li>
+                <p class="flexbox-border">Властивість border -  <span> контролює ширину, стиль і колір рамки (межі) елемента.</span></p>
+            </li>
+            <li>
+                <p class="flexbox-border-radius">Bластивість border-radius -  <span> Для того щоб закруглити всі кути рамки</span></p>
+            </li>
+            <li>
+                <p>Властивість display: block -  <span> Візуально - це прямокутні області, що йдуть одна за одною зверху вниз.</span></p>
+            </li>
+            <li>
+                <p>Bластивість display: inline -  <span> Візуально розташовуються в одному рядку один за одним доти, доки в ньому вистачає місця, після чого почнуть перестрибувати на наступний рядок і заповнювати його.</span></p>
+            </li>
+            <li>
+                <p>Bластивість display: inline-block -  <span> Гібрид між блоковими і рядковим елементами, який взяв все найкраще від обох.</span></p>
+            </li>
+            <li>
+                <p>Bластивість display: none -  <span> дозволяє повністю приховати елемент, звільнивши його простір для інших.</span></p>
+            </li>
+            <li>
+                <p>Псевдокласи :first-child і :last-child -  <span> Дозволяють вибрати перший або останній елемент в колекції сусідів.</span></p>
+            </li>
+            <li>
+                <p>Псевдоклас :not(selector) -  <span>Дозволяє вибрати всі елементи, які не задовольняють критерій.</span></p>
+            </li>
+            <li>
+                <p>Псевдоклас :nth-child(an+b) -  <span> Вибирає елементи в колекції сусідів за номером, зазначеним в дужках, за допомогою циклу an+b, який дозволяє задати правило для послідовності елементів.</span></p>
+            </li>
+            <li>
+                <p>Псевдоклас :nth-last-child(an+b) -  <span> Аналог :nth-child() з відмінністю у тому, що відлік ведеться з кінця колекції (Останнього елемента).</span></p>
+            </li>
+            <li>
+                <p>Bластивість display: flex | inline-flex -  <span> Створює flex-контейнер, блоковий або рядково-блоковий, залежно від заданого значення, і встановлює flex-контекст для всіх дітей (не нащадків) контейнера, перетворюючи їх у flex-елементи.</span></p>
+                <ul class="flexbox-menu">
+                    <li class="flexbox-item">Головна</li>
+                    <li class="flexbox-item">Блог</li>
+                    <li class="flexbox-item">Підкасти</li>
+                    <li class="flexbox-item">Контакти</li>
+                  </ul>
+            </li>
+            <li>
+                <p>Властивість flex-direction -  <span> встановлює напрямок головної осі, визначаючи напрямок елементів в контейнері.</span></p>
+                <ul class="flexbox-menu direction">
+                    <li class="flexbox-item">Головна</li>
+                    <li class="flexbox-item">Блог</li>
+                    <li class="flexbox-item">Підкасти</li>
+                    <li class="flexbox-item">Контакти</li>
+                  </ul>
+            </li>
+            <li>
+                <p>Властивість justify-content -  <span> Управляє позиціонуванням елементів на головній осі.</span></p>
+                <ul class="flexbox-menu justify">
+                    <li class="flexbox-item">Головна</li>
+                    <li class="flexbox-item">Блог</li>
+                    <li class="flexbox-item">Підкасти</li>
+                    <li class="flexbox-item">Контакти</li>
+                  </ul>
+            </li>
+            <li>
+                <p>Властивість align-items -  <span> Управляє розташуванням елементів вздовж поперечної осі.</span></p>
+                <ul class="flexbox-menu align">
+                    <li class="flexbox-item">Головна</li>
+                    <li class="flexbox-item">Блог</li>
+                    <li class="flexbox-item">Підкасти</li>
+                    <li class="flexbox-item">Контакти</li>
+                  </ul>
+            </li>
+            <li>
+                <p>Властивість flex-wrap -  <span> дозволяє перетворити однорядковий контейнер у багаторядковий.</span></p>
+                <p>Властивість gap - визначає відстань між стовпцями та рядками сітки.</p>
+                <ul class="flexbox-menu wrap">
+                    <li class="flexbox-item">Головна</li>
+                    <li class="flexbox-item">Блог</li>
+                    <li class="flexbox-item">Підкасти</li>
+                    <li class="flexbox-item">Контакти</li>
+                    <li class="flexbox-item">Головна</li>
+                    <li class="flexbox-item">Блог</li>
+                    <li class="flexbox-item">Підкасти</li>
+                    <li class="flexbox-item">Контакти</li>
+                    <li class="flexbox-item">Головна</li>
+                    <li class="flexbox-item">Блог</li>
+                    <li class="flexbox-item">Підкасти</li>
+                    <li class="flexbox-item">Контакти</li>
+                    <li class="flexbox-item">Головна</li>
+                    <li class="flexbox-item">Блог</li>
+                    <li class="flexbox-item">Підкасти</li>
+                    <li class="flexbox-item">Контакти</li>
+                    <li class="flexbox-item">Головна</li>
+                    <li class="flexbox-item">Блог</li>
+                    <li class="flexbox-item">Підкасти</li>
+                    <li class="flexbox-item">Контакти</li>
+                  </ul>
+            </li>
+            <li>
+                <p>Властивість align-content -  <span> Управляє вирівнюванням всіх рядків багаторядкового контейнера вздовж поперечної осі, якщо є вільне місце.</span></p>
+                <ul class="flexbox-menu align-content">
+                    <li class="flexbox-item">Головна</li>
+                    <li class="flexbox-item">Блог</li>
+                    <li class="flexbox-item">Підкасти</li>
+                    <li class="flexbox-item">Контакти</li>
+                    <li class="flexbox-item">Головна</li>
+                    <li class="flexbox-item">Блог</li>
+                    <li class="flexbox-item">Підкасти</li>
+                    <li class="flexbox-item">Контакти</li>
+                    <li class="flexbox-item">Головна</li>
+                    <li class="flexbox-item">Блог</li>
+                    <li class="flexbox-item">Підкасти</li>
+                    <li class="flexbox-item">Контакти</li>
+                    <li class="flexbox-item">Головна</li>
+                    <li class="flexbox-item">Блог</li>
+                    <li class="flexbox-item">Підкасти</li>
+                    <li class="flexbox-item">Контакти</li>
+                    <li class="flexbox-item">Головна</li>
+                    <li class="flexbox-item">Блог</li>
+                    <li class="flexbox-item">Підкасти</li>
+                    <li class="flexbox-item">Контакти</li>
+                    <li class="flexbox-item">Головна</li>
+                    <li class="flexbox-item">Блог</li>
+                    <li class="flexbox-item">Підкасти</li>
+                    <li class="flexbox-item">Контакти</li>
+                    <li class="flexbox-item">Головна</li>
+                    <li class="flexbox-item">Блог</li>
+                    <li class="flexbox-item">Підкасти</li>
+                    <li class="flexbox-item">Контакти</li>
+                  </ul>
+            </li>
+            <li>
+                <p>Властивість flex-basis -  <span> Визначає початковий розмір елемента перед розподілом вільного простору.</span></p>
+            </li>
+            <li>
+                <p>Властивість flex-grow -  <span> Визначає здатність елемента, у разі потреби, займати більше місця (рости), ніж його початковий розмір.</span></p>
+            </li>
+            <li>
+                <p>Властивість flex-shrink -  <span> Визначає здатність елемента, у разі потреби, займати менше місця (стискатися), ніж його початковий розмір.</span></p>
+            </li>
+            <li>
+                <p>Властивість align-self -  <span> Дозволяє елементу змінити своє положення на поперечній осі, перевизначивши для себе значення властивості align-items від контейнера</span></p>
+            </li>
+            <li>
+                <p>Властивість order -  <span> можна візуально змінити порядок розташування елементів вздовж головної осі.</span></p>
+            </li>
+        </ul>
     </div>
     <div class="modal-windows">
         <h2 id="modal-windows">Модальні вікна - <a
