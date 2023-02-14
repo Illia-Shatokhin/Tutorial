@@ -14,6 +14,23 @@ nav a {
     text-decoration: none;
 }
 
+.top {
+}
+
+.icon {
+    position: fixed;
+    background-color: inherit;
+    right: 30px;
+    bottom: 30px;
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    z-index: 1000;
+  }
+
 /* --------------- Блокова модель, Flexbox --------------- */
 
 .box-width-height {
@@ -100,6 +117,34 @@ nav a {
 
 .align-content > .flexbox-item {
     margin-left: 10px;
+}
+
+/* --------------- Декоративні ефекти та елементи, Векторна графіка --------------- */
+
+.graphic-background {
+    background-color: aquamarine;
+}
+
+.graphic-image {
+    background-color: rebeccapurple;
+    background-image: url('https://i.ebayimg.com/thumbs/images/g/E2cAAOSwCrJihqu9/s-l300.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gradient {
+    background-image: repeating-radial-gradient(
+    circle,
+    rgb(178, 130, 178),
+    rgb(235, 123, 235) 10px,
+    #896998 10px,
+    #c69fda 20px
+  );
+}
+
+.boxshadow {
+    box-shadow: 0 2.8px 2.2px red, 0 6.7px 5.3px blue, 0 12.5px 10px green,
+    0 22.3px 17.9px purple, 0 41.8px 33.4px orange, 0 100px 80px teal;
 }
 
 /* --------------- Модальні вікна --------------- */
@@ -189,7 +234,7 @@ nav a {
 }
 
 .general {
-    width: 1200px;
+    width: 1440px;
     padding: 20px 40px;
     outline: 1px solid red;
     margin-bottom: 25px;
